@@ -147,6 +147,15 @@
 .carousel--contenedor-2 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  background-color: rgb(255, 255, 255);
+}
+.carousel-2--titulo {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  margin: 5rem;
+  color: rgb(255, 0, 0);
 }
 .carousel--contenedor-2__img {
   display: flex !important;
@@ -160,11 +169,13 @@
   width: 35vh !important;
   height: 35vh !important;
   margin: 1rem 1.5rem;
+  border: black 1px solid;
 }
 .flecha-izquierda,
 .flecha-derecha {
   width: 2rem;
   margin-right: 5rem;
+  margin-top: 7rem;
 }
 .flecha-derecha {
   width: 2rem;

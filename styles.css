@@ -53,22 +53,24 @@
 }
 
 /* Carousel */
+.carousel-contenedor {
+  height: 91vh;
+}
 .imagen--carousel {
-  width: 100%;
+  width: 100vw;
   object-fit: contain;
 }
 .texto-carousel__contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50%;
+  top: 25%;
 }
 .texto-carousel__contenido {
   text-shadow: 1.5px 2px 0px rgb(0, 0, 0);
   border-radius: 0.5rem;
   padding: 2rem;
 }
-
 
 /* Quienes Somos */
 .quienes-somos--contenedor {

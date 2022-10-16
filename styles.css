@@ -54,7 +54,7 @@
 
 /* Carousel */
 .carousel-contenedor {
-  height: 91vh;
+  width: 100vh;
 }
 .imagen--carousel {
   width: 100vw;

@@ -5,28 +5,28 @@
   --rojo: rgb(255, 0, 0);
 }
 /* Whatsapp Icono */
-.float{
-	position:fixed;
-	width: 3.75rem;
-	height: 3.75rem;
-	bottom: 1.5rem;
-	right: 1.5rem;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius: 3.125rem;
-	text-align:center;
+.float {
+  position: fixed;
+  width: 3.75rem;
+  height: 3.75rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 3.125rem;
+  text-align: center;
   font-size: 2.3rem;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 .float:hover {
-	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
 }
 
-.my-float{
-	margin-top: 0rem;
+.my-float {
+  margin-top: 0rem;
 }
 /* Navbar */
 .navbar-contenedor {
@@ -53,6 +53,11 @@
 }
 
 /* Carousel */
+.imagen--carousel {
+  width: 100%;
+  height: 91vh;
+  object-fit: cover;
+}
 .texto-carousel__contenedor {
   display: flex;
   justify-content: center;
@@ -64,11 +69,7 @@
   border-radius: 0.5rem;
   padding: 2rem;
 }
-.imagen--carousel {
-  width: 100vh;
-  height: 100%;
-  object-fit: contain;
-}
+
 
 /* Quienes Somos */
 .quienes-somos--contenedor {
@@ -94,6 +95,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .aside--volquete {
   position: relative;
@@ -135,7 +137,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
-
 }
 .aside--texto:hover {
   color: red;
@@ -154,8 +155,8 @@
     font-size: 1.5rem;
   }
   .contenedor--img-aside {
-   flex-direction: column;
-  } 
+    flex-direction: column;
+  }
   .aside--volquete__img {
     width: 100%;
     height: 100%;
@@ -170,14 +171,14 @@
   }
 }
 @media (max-width: 620px) {
-  .float{
+  .float {
     width: 2rem;
     height: 2rem;
     bottom: 0.1rem;
     right: 0.2rem;
     font-size: 1rem;
   }
-  .my-float{
+  .my-float {
     margin-top: 0.5rem;
   }
   .texto-carousel__contenedor {
@@ -189,18 +190,24 @@
   .sub-texto--carousel {
     font-size: 1rem;
   }
-  @media (max-width: 478px) {
-    .texto-carousel__contenedor {
-      top: 5%;
-    }
-    .titulo-navbar {
-      font-size: 1.5rem;
-    }
-    .texto--carrousel {
-      font-size: 0.9rem;
-    }
-    .sub-texto--carousel {
-      font-size: 0.7rem;
-    }
+  .quienes-somos--texto {
+    font-size: 2rem;
+  }
+  .quienes-somos--sub-texto {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 478px) {
+  .texto-carousel__contenedor {
+    top: 5%;
+  }
+  .titulo-navbar {
+    font-size: 1.5rem;
+  }
+  .texto--carrousel {
+    font-size: 0.9rem;
+  }
+  .sub-texto--carousel {
+    font-size: 0.7rem;
   }
 }

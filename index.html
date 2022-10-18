@@ -36,10 +36,6 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto+Slab&display=swap" rel="stylesheet">
 
 </head>
 
@@ -106,18 +102,25 @@
             </div>
         </div>
     </div>
+    <div class="separador--negro"></div>
 
     <!-- Quienes Somos -->
     <div class="quienes-somos--contenedor">
         <h3 class="quienes-somos--texto" data-aos="fade-right">QUIÉNES SOMOS</h3>
         <h4 class="quienes-somos--sub-texto" data-aos="fade-left">Somos una empresa dedicada al suministro de baños
             quimicos y volquetes.
-            <br> Nuestro servicio se diferencia del resto por la puntualidad y la calidad de los mismos.
-            <br> Un servicio a tu medida, con transparencia, calidad y eficacia.
         </h4>
     </div>
+    <div class="separador--negro"></div>
 
     <!-- Aside de imagenes -->
+    <div class="aside-contenedor-texto">
+        <h3 class="aside--titulo" data-aos="fade-right">Nuestros Servicios</h3>
+        <h4 class="aside-sub-texto">
+        <br> Nuestro servicio se diferencia del resto por la puntualidad y la calidad de los mismos.
+        <br> Un servicio a tu medida, con transparencia, calidad y eficacia.
+    </h4>
+    </div>
     <div class="contenedor--img-aside">
         <aside class="aside--volquete" data-aos="zoom-in">
             <a class="aside--link" href="#">
@@ -125,9 +128,8 @@
                     <source srcset="img/volquetes-9.webp" type="image/webp">
                     <img loading="lazy" class="aside--volquete__img" src="img/img-jpg/volquetes-9.jpg"
                         alt="volquete encima de camion">
+                    <h5 class="aside--texto">Alquiler De volquetes</h5>
                 </picture>
-
-                <h5 class="aside--texto">Alquiler De volquetes</h5>
             </a>
         </aside>
 
@@ -137,18 +139,22 @@
                     <source srcset="img/baño-quimico-2.webp">
                     <img loading="lazy" class="aside--baño-quimico__img" src="img/img-jpg/baño-quimico-2.jpg"
                         alt="baños quimicos juntos">
+                    <h5 class="aside--texto">Alquiler De Baños Quimicos</h5>
                 </picture>
-
-                <h5 class="aside--texto">Alquiler De Baños Quimicos</h5>
             </a>
         </aside>
     </div>
 
+    <div class="separador--negro"></div>
     <!-- carousel de imagenes -->
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel--contenedor-2">
-            <h4 class="carousel-2--titulo" data-aos="flip-left">CÓMO TRABAJAMOS</h4>
-            <div class="carousel-inner">
+            <div class="contenedor-texto-carousel-2">
+                <h3 class="carousel-2--titulo" data-aos="fade-right">CÓMO TRABAJAMOS</h3>
+                <h4 class="carousel-2--sub" data-aos="fade-left">Hecha un vistazo a lo que hacemos día a día para nuestros clientes.</h4>
+            </div>
+
+            <div class="carousel-inner contenedor-imagenes-carousel-2">
                 <div class="carousel-item active carousel--contenedor-2__img">
                     <picture data-aos="zoom-in">
                         <source srcset="img/baño-quimico-1.webp">
@@ -244,13 +250,13 @@
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
-                <img loading="lazy" src="img/Iconos/flecha-izquierda.png" class="flecha-izquierda" aria-hidden="true"
+                <img loading="lazy" src="img/iconos/flecha-izquierda.png" data-aos="fade-right" class="flecha-izquierda" aria-hidden="true"
                     alt="Flecha derecha">
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="next">
-                <img loading="lazy" src="img/Iconos/flecha-derecha.png" class="flecha-derecha" aria-hidden="true"
+                <img loading="lazy" src="img/iconos/flecha-derecha.png" data-aos="fade-left" class="flecha-derecha" aria-hidden="true"
                     alt="Flecha izquierda">
                 <span class="visually-hidden">Next</span>
             </button>

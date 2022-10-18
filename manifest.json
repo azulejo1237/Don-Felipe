@@ -1,0 +1,18 @@
+{
+  "theme_color": "#ffffff",
+  "short_name": "Don Felipe",
+  "name": "Don Felipe alquiler de volquetes y baños quimicos",
+  "description": "Somos una empresa dedicada al suministro de baños quimicos y volquetes para obras, eventos y particulares al mejor precio, Nos encontramos en zona Sur.",
+  "icons": [
+    {
+      "src": "img/baños-quimicos-y-volquetes--logo.png",
+      "type": "image/png",
+      "sizes": "148x148"
+    }
+  ],
+  "background_color": "#ffffff",
+  "start_url": "www.don-felipe.com",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/"
+}

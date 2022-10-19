@@ -303,8 +303,8 @@ nav {
   justify-content: center;
   flex-direction: column;
 }
-.footer--Copyright {
-  margin-top: 5rem;
+.separador--footer {
+  margin-top: 3rem;
 }
 
 /* Media querys */

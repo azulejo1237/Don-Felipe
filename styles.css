@@ -293,10 +293,10 @@ nav {
   display: flex;
   text-decoration: none;
   color: black;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .footer--whatsapp__logo {
-  width: 2rem;
+  width: 2em;
 }
 .footer--iconos__texto {
   display: flex;
@@ -304,7 +304,7 @@ nav {
   flex-direction: column;
 }
 .footer--Copyright {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 /* Media querys */

@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Alkalami", serif;
-  src: url(Fuentes/Alkalami-Regular.woff2) format("woff2"),
-  url(Fuentes/Alkalami-Regular.woff) format("woff");
+  src: url(fuentes/alkalami-regular.woff2) format("woff2"),
+    url(fuentes/alkalami-regular.woff) format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto Slab", serif;
-  src: url(Fuentes/RobotoSlab-Regular.woff2) format("woff2"),
-  url(Fuentes/RobotoSlab-Regular.woff) format("woff");
+  src: url(fuentes/robotoslab-regular.woff2) format("woff2"),
+    url(fuentes/robotoslab-regular.woff) format("woff");
   font-display: swap;
 }
 /* Variables */
@@ -32,7 +32,6 @@
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
   overflow: hidden;
-
 }
 .float:hover {
   text-decoration: none;
@@ -50,23 +49,32 @@
 }
 
 /* Navbar */
-.navbar-contenedor {
-  width: 100%;
-  height: 4rem;
-  background-color: var(--negro);
-  overflow: hidden;
+.position-relative__media-query {
+  background-color: rgba(0, 0, 0, 0.733) !important;
+  height: 3em;
+  display: flex;
+  justify-content: center;
 }
 .titulo-navbar {
   position: absolute;
-  left: 50%;
   transform: translatex(-50%);
   color: var(--rojo) !important;
   font-family: "Alkalami", serif;
-  text-shadow: 0px 0px 1px var(--blanco);
-  font-size: 2.5rem;
-  margin-top: 1rem;
+  text-shadow: 0.1px 0.1px 1px var(--blanco);
+  font-size: 2.5em;
+}
+nav {
+  width: 100%;
+  overflow: hidden;
 }
 
+.navbar__home {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
 
 /* Carousel */
 .carousel-contenedor {
@@ -74,29 +82,30 @@
 }
 .imagen--carousel {
   width: 100vw;
-  object-fit: contain;
+  height: 51vw;
+  object-fit: cover;
 }
 .texto-carousel__contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 25%;
+  top: 50%;
 }
 .texto-carousel__contenido {
   text-shadow: 1.5px 2px 0px var(--negro);
   border-radius: 0.5rem;
   padding: 2rem;
-
 }
 .texto--carrousel {
-  font-size: 2.5rem;
+  font-family: "Roboto Slab", serif;
+  font-size: 3em;
   text-shadow: 3px 3px 1px var(--negro);
 }
 .sub-texto--carousel {
-  font-size: 1.9rem;
+  font-family: "Roboto Slab", serif;
+  font-size: 2em;
   text-shadow: 3px 1px 1px var(--negro);
 }
-
 
 /* Quienes Somos */
 .quienes-somos--contenedor {
@@ -104,22 +113,23 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 5rem;
+  margin: 0 10vh;
   text-align: center;
   overflow: hidden;
-
 }
 .quienes-somos--texto {
   font-family: "Alkalami", serif;
   color: var(--rojo);
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 600;
-  text-shadow: 1px 1px 4px var(--negro);
+  text-shadow: 1px 1px 1px var(--negro);
+  margin-top: 10vh;
 }
 .quienes-somos--sub-texto {
   font-family: "Roboto Slab", serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2em;
+  margin-bottom: 10vh;
 }
 
 /* Aside de imagenes */
@@ -129,20 +139,23 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 5rem;
-  
+  overflow: hidden;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .aside--titulo {
   font-family: "Alkalami", serif;
   color: var(--rojo);
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 600;
-  text-shadow: 1px 1px 4px var(--negro);
+  text-shadow: 1px 1px 1px var(--negro);
+  margin-top: 3rem;
 }
-.aside-sub-texto{
+.aside-sub-texto {
   font-family: "Roboto Slab", serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2em;
+  margin-bottom: 4rem;
 }
 .contenedor--img-aside {
   display: flex;
@@ -190,9 +203,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 1px 1px 5px var(--negro);
-  color: var(--blanco)}
-  
-
+  color: var(--blanco);
+}
 .aside--texto:hover {
   color: var(--rojo);
 }
@@ -207,15 +219,13 @@
   margin-bottom: 5rem;
   background-color: var(--blanco);
   overflow: hidden;
-
 }
 .carousel--contenedor-2 {
   display: flex;
-  margin-bottom: 15rem;
+  margin-bottom: 20vh;
 }
 .contenedor-imagenes-carousel-2 {
   display: flex;
-  margin-top: 5rem 0;
 }
 .contenedor-texto-carousel-2 {
   display: flex;
@@ -223,19 +233,23 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .carousel-2--titulo {
   font-family: "Alkalami", serif;
   color: var(--rojo);
   font-size: 3rem;
   font-weight: 600;
-  text-shadow: 1px 1px 4px var(--negro);
+  text-shadow: 1px 1px 1px var(--negro);
+  font-size: 3em;
+  padding-top: 3rem;
 }
 .carousel-2--sub {
   font-family: "Roboto Slab", serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2em;
+  padding-bottom: 4rem;
 }
 .carousel--contenedor-2__img {
   display: flex !important;
@@ -257,7 +271,7 @@
 .flecha-derecha {
   width: 2rem;
   height: auto;
-  margin-top: 18rem;
+  margin-top: 14rem;
   overflow: hidden;
 }
 .flecha-derecha {
@@ -268,19 +282,41 @@
   margin-right: 5rem;
 }
 .carousel-control-next {
-  overflow: hidden; 
+  overflow: hidden;
+}
+
+/* Footer */
+.footer--logo {
+  width: 12rem;
+}
+.footer__links--whatsapp {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+}
+.footer--whatsapp__logo {
+  width: 2rem;
+}
+.footer--iconos__texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer--Copyright {
+  margin-top: 3rem;
 }
 
 /* Media querys */
 @media (max-width: 840px) {
   .texto-carousel__contenedor {
-    top: 15%;
+    top: 35%;
   }
   .texto--carrousel {
-    font-size: 2rem;
+    font-size: 2.5em;
   }
   .sub-texto--carousel {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   .contenedor--img-aside {
     flex-direction: column;
@@ -290,12 +326,14 @@
     height: 100%;
     object-fit: contain;
     overflow: hidden;
+    filter: grayscale(0);
   }
   .aside--baño-quimico__img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     overflow: hidden;
+    filter: grayscale(0);
   }
   .carousel--contenedor-2__img {
     flex-direction: column !important;
@@ -313,40 +351,29 @@
     margin-left: 0rem;
   }
 }
-@media (max-width: 800px) {
-  .carousel-2--titulo {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 714px) {
-  .carousel-2--titulo {
-    font-size: 2.2rem;
+@media (max-width: 767px) {
+  .footer--contenedor__iconos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 620px) {
-  .carousel-2--titulo {
-    font-size: 2rem;
+  .position-relative__media-query {
+    height: 2em;
   }
-  .texto-carousel__contenedor {
-    top: 5%;
+  .titulo-navbar {
+    font-size: 1.5em;
   }
   .texto--carrousel {
-    font-size: 1.5rem;
+    font-size: 2em;
   }
   .sub-texto--carousel {
-    font-size: 1rem;
-  }
-  .quienes-somos--texto {
-    font-size: 2rem;
-  }
-  .quienes-somos--sub-texto {
-    font-size: 1rem;
+    font-size: 1.5em;
   }
 }
 @media (max-width: 478px) {
-  .carousel-2--titulo {
-    font-size: 1.5rem;
-  }
   .float {
     width: 3rem;
     height: 3rem;
@@ -354,16 +381,10 @@
     right: 1rem;
   }
 
-  .texto-carousel__contenedor {
-    top: 5%;
-  }
-  .titulo-navbar {
-    font-size: 1.5rem;
-  }
   .texto--carrousel {
-    font-size: 0.9rem;
+    font-size: 1.3em;
   }
   .sub-texto--carousel {
-    font-size: 0.7rem;
+    font-size: 1em;
   }
 }

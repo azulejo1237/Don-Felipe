@@ -9,12 +9,10 @@
 
     <!-- Autor de la pagina -->
     <meta name="author" content="Alejandro Palazzo">
-    <!-- Lenguaje de la pagina -->
-    <meta http-equiv="Content-Language" content="spanish">
     <!-- Distribucion de la pagina -->
-    <meta name="distribution" content="global" />
+    <meta name="distribution" content="global">
     <!-- Color de tema -->
-    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="theme-color" content="#FFFFFF">
     <!-- Descripcion -->
     <meta name="description"
         content="Somos una empresa dedicada al suministro de baños quimicos y volquetes para obras, eventos y particulares al mejor precio, Nos encontramos en zona Sur.">
@@ -46,16 +44,18 @@
         <i class="fa fa-whatsapp my-float" data-aos="zoom-in"></i>
     </a>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark navbar-contenedor">
-        <h1 class="titulo-navbar">Don Felipe</h1>
-    </nav>
-
     <!-- Carousel -->
     <div class="contenedor-inicio">
         <div class="carousel-inicio">
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner carousel-contenedor">
+
+                    <!-- Navbar -->
+                    <nav class="navbar__home position-relative__media-query" data-aos="fade-down">
+                        <a class="logo" href="index.html">
+                            <h1 class="titulo-navbar">Don Felipe</h1>
+                        </a>
+                    </nav>
 
                     <div class="carousel-item active" data-bs-interval="5000">
                         <picture>
@@ -73,8 +73,8 @@
 
                     <div class="carousel-item" data-bs-interval="5000">
                         <picture>
-                            <source src="img/volquetes-5.webp" type="image/webp">
-                            <img srcset="img/img-jpg/volquetes-5.jpg" class="d-block imagen--carousel"
+                            <source srcset="img/volquetes-5.webp" type="image/webp">
+                            <img src="img/img-jpg/volquetes-5.jpg" class="d-block imagen--carousel"
                                 alt="volquete en el piso">
                         </picture>
                         <div class="carousel-caption texto-carousel__contenedor">
@@ -87,8 +87,8 @@
 
                     <div class="carousel-item" data-bs-interval="2000">
                         <picture>
-                            <source src="img/volquetes-9.webp" type="image/webp">
-                            <img srcset="img/img-jpg/volquetes-9.jpg" class="d-block imagen--carousel"
+                            <source srcset="img/volquetes-9.webp" type="image/webp">
+                            <img src="img/img-jpg/volquetes-9.jpg" class="d-block imagen--carousel"
                                 alt="Fondo de camion con volquete">
                         </picture>
                         <div class="carousel-caption texto-carousel__contenedor">
@@ -116,31 +116,31 @@
     <!-- Aside de imagenes -->
     <div class="aside-contenedor-texto">
         <h3 class="aside--titulo" data-aos="fade-right">Nuestros Servicios</h3>
-        <h4 class="aside-sub-texto">
-        <br> Nuestro servicio se diferencia del resto por la puntualidad y la calidad de los mismos.
-        <br> Un servicio a tu medida, con transparencia, calidad y eficacia.
-    </h4>
+        <h4 class="aside-sub-texto" data-aos="fade-left">
+            <br> Nuestro servicio se diferencia del resto por la puntualidad y la calidad de los mismos.
+            <br> Un servicio a tu medida, con transparencia, calidad y eficacia.
+        </h4>
     </div>
     <div class="contenedor--img-aside">
         <aside class="aside--volquete" data-aos="zoom-in">
-            <a class="aside--link" href="#">
+            <a class="aside--link" hreflang="#">
                 <picture>
                     <source srcset="img/volquetes-9.webp" type="image/webp">
                     <img loading="lazy" class="aside--volquete__img" src="img/img-jpg/volquetes-9.jpg"
                         alt="volquete encima de camion">
-                    <h5 class="aside--texto">Alquiler De volquetes</h5>
                 </picture>
+                <h5 class="aside--texto">Alquiler De volquetes</h5>
             </a>
         </aside>
 
         <aside class="aside--baño-quimico" data-aos="zoom-in">
-            <a class="aside--link" href="#">
+            <a class="aside--link" hreflang="#">
                 <picture>
                     <source srcset="img/baño-quimico-2.webp">
                     <img loading="lazy" class="aside--baño-quimico__img" src="img/img-jpg/baño-quimico-2.jpg"
                         alt="baños quimicos juntos">
-                    <h5 class="aside--texto">Alquiler De Baños Quimicos</h5>
                 </picture>
+                <h5 class="aside--texto">Alquiler De Baños Quimicos</h5>
             </a>
         </aside>
     </div>
@@ -151,7 +151,8 @@
         <div class="carousel--contenedor-2">
             <div class="contenedor-texto-carousel-2">
                 <h3 class="carousel-2--titulo" data-aos="fade-right">CÓMO TRABAJAMOS</h3>
-                <h4 class="carousel-2--sub" data-aos="fade-left">Hecha un vistazo a lo que hacemos día a día para nuestros clientes.</h4>
+                <h4 class="carousel-2--sub" data-aos="fade-left">Hecha un vistazo a lo que hacemos día a día para
+                    nuestros clientes.</h4>
             </div>
 
             <div class="carousel-inner contenedor-imagenes-carousel-2">
@@ -250,18 +251,97 @@
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
-                <img loading="lazy" src="img/iconos/flecha-izquierda.png" data-aos="fade-right" class="flecha-izquierda" aria-hidden="true"
-                    alt="Flecha derecha">
+                <img loading="lazy" src="img/iconos/flecha-izquierda.png" data-aos="fade-right" class="flecha-izquierda"
+                    aria-hidden="true" alt="Flecha derecha">
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="next">
-                <img loading="lazy" src="img/iconos/flecha-derecha.png" data-aos="fade-left" class="flecha-derecha" aria-hidden="true"
-                    alt="Flecha izquierda">
+                <img loading="lazy" src="img/iconos/flecha-derecha.png" data-aos="fade-left" class="flecha-derecha"
+                    aria-hidden="true" alt="Flecha izquierda">
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
+
+    <div class="separador--negro"></div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark" style="background-color: var(--blanco)">
+        <!-- Section: Social media -->
+        <div class="d-flex justify-content-between p-2 text-white" style="background-color: var(--rojo)"></div>
+        <div class="separador--negro"></div>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <a href="index.html">
+                        <img class="footer--logo" data-aos="zoom-out" src="img/baños-quimicos-y-volquetes--logo.png"
+                            alt="logo Don felipe">
+                    </a>
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div class="footer__contenedor--3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold footer--titulos" data-aos="flip-down">Si tenes alguna duda no
+                            dudes en Contactanos
+                        </h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px">
+
+                        <div class="footer--contenedor__iconos" data-aos="flip-right">
+                            <h5>Miguel</h5>
+                            <div class="footer--iconos">
+                                <a class="footer__links--whatsapp" href="https://wa.me/5491139252919"><img
+                                        src="img/iconos/whatsapp-logo.png" class="footer--whatsapp__logo"
+                                        alt="logo whatsapp">
+                                    <h6 class="footer--iconos__texto">+5491139252919</h6>
+                                </a>
+                            </div>
+
+                            <h5>Victor</h5>
+                            <div class="footer--iconos">
+                                <a class="footer__links--whatsapp" href="https://wa.me/5491159279001"><img
+                                        src="img/iconos/whatsapp-logo.png" class="footer--whatsapp__logo"
+                                        alt="logo whatsapp">
+                                    <h6 class="footer--iconos__texto">+5491159279001</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold footer--titulos" data-aos="flip-down">Seguinos en</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <div class="footer--iconos" data-aos="flip-right">
+                        <a class="" href="https://www.facebook.com/felipe.murruni.5"><img src="img/iconos/facebook.png"
+                                class="footer--whatsapp__logo" alt="logo whatsapp">
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-0 footer--Copyright" style="background-color: rgba(0, 0, 0, 0.096)">
+            © 2022 Copyright:
+            <a class="text-dark" href="https://www.don-felipe.com">Don-Felipe.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

@@ -14,5 +14,5 @@
   "start_url": "www.don-felipe.com",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/"
+  "scope": "www.don-felipe.com"
 }
